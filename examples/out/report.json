@@ -1,0 +1,37 @@
+{
+  "tool": "jsonld-guard",
+  "version": "1.0.0",
+  "summary": {
+    "files": 1,
+    "blocks": 3,
+    "nodes": 2,
+    "errors": 3,
+    "warnings": 0
+  },
+  "issues": [
+    {
+      "file": "examples/in/broken.html",
+      "block": 1,
+      "path": "$",
+      "code": "missing-required",
+      "severity": "error",
+      "message": "Product is missing required property 'name'"
+    },
+    {
+      "file": "examples/in/broken.html",
+      "block": 2,
+      "path": "$",
+      "code": "missing-required",
+      "severity": "error",
+      "message": "Article is missing required property 'author'"
+    },
+    {
+      "file": "examples/in/broken.html",
+      "block": 3,
+      "path": "$",
+      "code": "invalid-json",
+      "severity": "error",
+      "message": "JSON parse error: Expecting value at line 2"
+    }
+  ]
+}
